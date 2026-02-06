@@ -1,5 +1,5 @@
-import os 
+import os
 
-BOT_TOKEN = "8316396857:AAFqUNskRkYMkIXExzXmS7wtilYq1ZNEtX4"
-ADMIN_ID = 6134452987  
-CHECK_INTERVAL = 60   
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+ADMIN_ID = int(os.getenv("ADMIN_ID", "0"))
+CHECK_INTERVAL = int(os.getenv("CHECK_INTERVAL", "60"))
